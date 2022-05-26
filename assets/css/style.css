@@ -49,6 +49,7 @@ html {
 }
 
 .main {
+    overflow: hidden;
     padding: 60px 0 80px;
     background-image: linear-gradient(45deg, #6f86d6, #88f0f8);
 }

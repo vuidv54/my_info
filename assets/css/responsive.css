@@ -1,0 +1,105 @@
+/* Mobile and Tablet */
+@media (max-width: 1023px) {
+    .info-list {
+        display: flex;
+        justify-content: space-between;
+    }
+    .category {
+        padding: 20px 16px 0;
+        margin-bottom: 24px;
+    }
+    .info-item:last-child  {
+        margin-bottom: 20px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .header {
+        padding: 26px 40px 0 80px;
+    }
+    .header-left {
+        border-right: none;
+        margin-bottom: 36px;
+    }
+    .hobby-item {
+        align-items: center;
+    }
+    .hobby-img {
+        height: 45%;
+    }
+    .result {
+        padding: 10px;
+    }
+    .result-item {
+        padding: 10px;
+    }
+}
+
+/* Moblie */
+@media (max-width: 739px) {
+    .header-left {
+        border-right: none;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: -50px;
+    }
+    .header__avtar {
+        margin-right: 0;
+        margin-bottom: 12px;
+    }
+    .header-left__info {
+        text-align: center;
+    }
+    .header-left__socials {
+        margin-left: 8px;
+    }
+    .header-right {
+        margin-left: 50px;
+    }
+    .body-container {
+        margin-bottom: 80px;
+    }
+    .category {
+        position: fixed;
+        z-index: 3;
+        bottom: 0;
+        width: 100%;
+        padding: 8px;
+        margin-bottom: unset;
+        background-color: rgba(34, 34, 216, 0.6);
+    }
+    .result-item {
+        width: 100%;
+    }
+    .hobby-img {
+        width: 100%;
+        margin-right: unset;
+        margin-bottom: 16px;
+    }
+    .hobby-item {
+        flex-direction: column;
+    }
+    .hobby-title {
+        text-align: center;
+    }
+    .info-item {
+        width: 94px;
+        margin-bottom: 0;
+    }
+    .info-item:last-child {
+        margin-bottom: 0;
+    }
+    .info-item-link {
+        font-size: 1.6rem;
+        padding: 6px 0;
+    }
+    .header-right-item {
+        margin-bottom: 20px;
+    }
+    .header-right__bottom,
+    .header-right__top {
+        height: unset;
+    }
+}
