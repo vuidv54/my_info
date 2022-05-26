@@ -207,6 +207,7 @@ html {
 }
 
 .self,
+.result,
 .goal,
 .hobby {
     display: none;
@@ -225,6 +226,10 @@ html {
 
 
 .hobby.active {
+    display: block;
+}
+
+.result.active {
     display: block;
 }
 
@@ -269,6 +274,74 @@ html {
     font-weight: 400 !important;
     margin-bottom: 30px;
     color: #333 !important;
+}
+
+.result-container-item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.result-item {
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+}
+
+.result-item-img {
+    width: 100%;
+    padding-top: 60%;
+    border-radius: 16px;
+    margin-bottom: 12px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5); 
+}
+
+.result-item-img:hover {
+    cursor: pointer;
+}
+
+.result-item-img:hover .result-img-hover {
+    top: 0;
+}
+
+.result-link {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.result-img-hover {
+    height: 100% ;
+    width: 100%;
+    border-radius: 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    transition: 0.5s linear;
+}
+
+.result-img-link {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    font-weight: 600;
+    text-decoration: none;
+    color: rgb(46, 231, 46);
+}
+
+.result-source-code {
+    margin-top: 12px;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    font-weight: 600;
+    color: rgb(39, 122, 231);
 }
 
 .hobby-item {
