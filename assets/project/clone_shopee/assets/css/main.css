@@ -25,6 +25,14 @@
     z-index: 5;
 }
 
+.header__navbar-item.header__navbar-user {
+    display: none;
+}
+
+.header__navbar-item.header__navbar-user.active {
+    display: flex;
+}
+
 .header__navbar-user:hover .header__navbar-menu {
     display: block;
 }
@@ -137,6 +145,10 @@
 
 .header__navbar-item--bold {
     font-weight: 400;
+}
+
+.header__navbar-item--bold.disabled {
+    display: none;
 }
 
 .header__navbar-item--separate::after {
@@ -347,6 +359,22 @@
     background-color: var(--white-color);
 }
 
+.register.disabled {
+    display: none;
+}
+
+.register.active {
+    display: block;
+}
+
+.login.disabled {
+    display: none;
+}
+
+.login.active {
+    display: block;
+}
+
 .auth-form__container {
     padding: 0 32px;
 }
@@ -386,6 +414,10 @@
     outline: none;
     border: 1px solid var(--border-color);
     border-radius: 2px;
+}
+
+.auth-form__input.invalid {
+    border-color: red;
 }
 
 .auth-form__input:focus {
@@ -777,8 +809,8 @@
 }
 
 /* Header Cart Has Cart */
-.header__cart-all-item {
-    /* display: none; */
+.header__cart-list-no-cart .header__cart-all-item {
+    display: none;
 }
 
 .header__cart-heading {
@@ -1022,6 +1054,57 @@
     transform: translateY(-50%);
 }
 
+
+/* Add Products */
+.add-product {
+    padding: 16px;
+}
+
+.add-product__input {
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+}
+
+#add-product__submit {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+/* Button edit and delete product */
+.control-product {
+    padding: 2px 10px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-edit-product,
+.btn-add-product, 
+.btn-delete-product {
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 4px 10px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    background-color: var(--primary-color);
+}
+
+.btn-edit-product:hover,
+.btn-add-product:hover,
+.btn-delete-product:hover {
+    opacity: 0.7;
+}
+
+/*  Handle dislay product */
+#laptop {
+    display: none;
+}
+
 /* Home filter */
 
 .home-filter {
@@ -1192,18 +1275,18 @@
 }
 
 .home-product__item-price {
-
+    display: flex;
+    padding: 0 10px;
+    justify-content: space-between
 }
 
 .home-product__item-price-old {
     font-size: 1.3rem;
     color: #999;
     text-decoration: line-through;
-    margin-left: 10px;
 }
 
 .home-product__item-price-current {
-    margin-left: 10px;
     font-size: 1.5rem;
     color: var(--primary-color);
 }

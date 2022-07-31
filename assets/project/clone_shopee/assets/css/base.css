@@ -45,10 +45,19 @@ html {
 /* Modal */
 .modal {
     position: fixed;
+    z-index: 10;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
+    display: none;
+}
+
+.modal.disabled {
+    display: none;
+}
+
+.modal.active {
     display: flex;
 }
 
@@ -56,7 +65,7 @@ html {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.7);
     animation: fadeIn linear 0.1s;
 }
 
@@ -67,6 +76,12 @@ html {
     z-index: 10;
     margin: auto;
     animation: growth linear 0.1s;
+}
+
+.form-error-message {
+    display: block;
+    font-size: 1.2rem;
+    color: red
 }
 
 /* Button style */
