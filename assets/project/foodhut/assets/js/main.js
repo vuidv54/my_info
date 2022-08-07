@@ -10,7 +10,7 @@ const lisInfoItems = $('.list__info');
 const controlFoodBtn = $('.control-food__btn');
 const controlJuiceBtn = $('.control-juices-btn');
 const foodItems = $$('.event-food-item');
-const juiceItems = $$('.event-juice-item');
+const menuItems = $$('.js__menu-item');
 
 const logoWidth = navBarLogo.clientWidth;
 
@@ -58,3 +58,21 @@ controlJuiceBtn.onclick = () => {
         juiceItem.classList.remove('event-juice-item--hidden');
     }
 }
+
+function getmenuItemActive() {
+    for(let j = 0; j < menuItems.length; j++) {
+        if(menuItems[j].classList.contains('menu-item__link--active')) {
+            return j;
+        }
+    }
+}
+
+(function() {
+    for(let i = 0; i < menuItems.length; i++) {
+        menuItems[i].onclick = () => {
+            let indexOfMenUItemActive = getmenuItemActive();
+            menuItems[i].classList.add('menu-item__link--active');
+            menuItems[indexOfMenUItemActive].classList.remove('menu-item__link--active');
+        }
+    }
+})();

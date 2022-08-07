@@ -91,7 +91,7 @@ html {
 }
 
 .menu-item__link.menu-item__link--active,
-.info-item__link.info-item__link--active {
+.info-item__link.menu-item__link--active {
     color: var(--primary-color);
 }
 
@@ -188,7 +188,7 @@ html {
 }
 
 .about-section__left {
-    padding-top: 100%;
+    padding-top: 50%;
     background: url('../img/about-section.jpg') no-repeat center / cover;
 }
 
@@ -452,7 +452,7 @@ html {
 }
 .event-food-item,
 .event-juice-item {
-    animation: showOn linear 0.5s;
+    animation: showOn linear 0.7s;
 }
 
 .event-food-item.event-food-item--hidden,
