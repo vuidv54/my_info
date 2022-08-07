@@ -9,6 +9,7 @@ const listMenuItems = $('.list__menu');
 const lisInfoItems = $('.list__info');
 const controlFoodBtn = $('.control-food__btn');
 const controlJuiceBtn = $('.control-juices-btn');
+const juiceItems = $$('.event-juice-item');
 const foodItems = $$('.event-food-item');
 const menuItems = $$('.js__menu-item');
 
