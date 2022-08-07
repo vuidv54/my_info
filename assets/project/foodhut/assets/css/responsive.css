@@ -1,0 +1,106 @@
+/* Tablet and Mobile */
+@media (max-width: 1023px) {
+    .navbar {
+        padding: 8px;
+    }
+    .navbar > .row {
+        margin-top: 2px;
+        flex-direction: column;
+    }
+    .navbar-menu {
+        display: block;
+    }
+
+    .list__menu{
+        display: none;
+        margin-top: 8px;
+    }
+
+    .list__menu.list__menu--showWhenClickMenu,
+    .list__info.list__info--showWhenClickMenu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .navbar__logo {
+        display: none;
+    }
+
+    .list__info {
+        display: none;
+        transition: 0.3s;
+    }
+
+    .menu-item,
+    .info-item{
+        width: 100%;
+        margin-left: 2px;
+    }
+
+    .about-section__left {
+        display: none;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .our-menu__title {
+        padding-top: 0;
+    }
+    .book-table__title {
+        padding-top: 0px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .about-section-right {
+        padding: 32px;
+    }
+
+    .our-menu__item-1,
+    .our-menu__item-2,
+    .our-menu__item-3,
+    .our-menu__item-4,
+    .our-menu__item-5,
+    .our-menu__item-6,
+    .our-menu__item-7,
+    .our-menu__item-8,
+    .our-menu__item-9,
+    .our-menu__item-10,
+    .our-menu__item-11,
+    .our-menu__item-12 {
+        padding-top: 50%;
+    }
+
+    .book-table-wrapper {
+        flex-direction: column;
+    }
+
+    .input-wrapper + .input-wrapper {
+        margin-top: 16px;
+    }
+    
+    .control-food__btn,
+    .control-juices-btn {
+        min-width: 150px;
+    }
+    
+    .our-menu__title {
+        padding: 40px 0;
+    }
+
+    .event-food-item + .event-food-item,
+    .event-juice-item + .event-juice-item {
+        margin-top: 16px;
+    }
+
+    .book-table__title,
+    .event-food-titles,
+    .reviews-title {
+        padding-top: 40px;
+        margin-bottom: 30px;
+    }
+
+}
