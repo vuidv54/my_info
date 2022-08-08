@@ -1,101 +1,119 @@
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
-const arrowLeft = $('.arrow-left');
-const arrowRight = $('.arrow-right');
+const navBar = $('.navbar');
+const navBarLogo = $('.navbar__logo-img');
+const navBarLogoTitle = $('.logo__title');
+const navBarMenu = $('.navbar-menu');
+const listMenuItems = $('.list__menu');
+const lisInfoItems = $('.list__info');
+const controlFoodBtn = $('.control-food__btn');
+const controlJuiceBtn = $('.control-juices-btn');
+const juiceItems = $$('.event-juice-item');
+const foodItems = $$('.event-food-item');
+const menuItems = $$('.js__menu-item');
+const contentMenu = $('#content');
+const aboutMenu = $('#about-us');
+const galleryMenu = $('#gallery');
+const bookTableMenu = $('#book-table');
+const blogMenu = $('#event-food');
+const reviewMenu = $('#reviews');
+const contactMenu = $('#contact-us');
 
-const listAuthor = $$('.slide-main-item');
-const listDot = $$('.slide-dot-item');
+const logoWidth = navBarLogo.clientWidth;
 
-const infoItems = $$('.info-item');
-const contentItems = $$('.content-item');
+document.onscroll = (e) => {
+    let scrollTop = window.scrollY || document.documentElement.scrollTop;
+    let newLogoWidth = logoWidth - scrollTop;
 
-let currentIndex = 0;
+    navBarLogo.style.width = newLogoWidth > 0 ? newLogoWidth + 'px' : 0;
+    navBarLogo.style.opacity = newLogoWidth / logoWidth;
 
-arrowLeft.onclick = function () {
-    getCurrentIndex();
-    backSlide();
-}
+    if(newLogoWidth <= 20) {
+        navBarLogoTitle.classList.add('logo__title--active');
+        navBar.classList.add('navbar--active');
+    } else {
+        navBar.classList.remove('navbar--active');
+        navBarLogoTitle.classList.remove('logo__title--active');
+    }
 
-arrowRight.onclick = function () {
-    getCurrentIndex();
-    nextSlide();
-}
+    let contentMenuHeight = contentMenu.clientHeight;
+    let aboutMenuHeight = aboutMenu.clientHeight;
+    let galleryMenuHeight = galleryMenu.clientHeight;
+    let bookTableMenuHeight = bookTableMenu.clientHeight;
+    let blogMenuHeight = blogMenu.clientHeight;
+    let reviewMenuHeight = reviewMenu.clientHeight;
+    let contactMenuHeight = contactMenu.clientHeight;
 
-for (let Dot of listDot) {
-    Dot.onclick = function () {
-        getCurrentIndex();
-        listDot[currentIndex].classList.remove('slide-dot-item--active');
-        listAuthor[currentIndex].classList.remove('slide-main-item--active');
-        this.classList.add('slide-dot-item--active');
-        getCurrentIndex();
-        listAuthor[currentIndex].classList.add('slide-main-item--active');
+    let indexOfMenUItemActive = getmenuItemActive();
+
+    if(scrollTop <=  contentMenuHeight - 50) {
+        menuItems[indexOfMenUItemActive].classList.remove('menu-item__link--active');
+        menuItems[0].classList.add('menu-item__link--active');
+    } else if(scrollTop <=  contentMenuHeight + aboutMenuHeight - 50) {
+        menuItems[indexOfMenUItemActive].classList.remove('menu-item__link--active');
+        menuItems[1].classList.add('menu-item__link--active');
+    } else if(scrollTop <=  contentMenuHeight + aboutMenuHeight + galleryMenuHeight - 50) {
+        menuItems[indexOfMenUItemActive].classList.remove('menu-item__link--active');
+        menuItems[2].classList.add('menu-item__link--active');
+    } else if(scrollTop <=  contentMenuHeight + aboutMenuHeight + galleryMenuHeight  + bookTableMenuHeight - 50) {
+        menuItems[indexOfMenUItemActive].classList.remove('menu-item__link--active');
+        menuItems[3].classList.add('menu-item__link--active');
+    } else if(scrollTop <=  contentMenuHeight + aboutMenuHeight + galleryMenuHeight  + bookTableMenuHeight + blogMenuHeight - 50) {
+        menuItems[indexOfMenUItemActive].classList.remove('menu-item__link--active');
+        menuItems[4].classList.add('menu-item__link--active');
+    } else if(scrollTop <=  contentMenuHeight + aboutMenuHeight + galleryMenuHeight  + bookTableMenuHeight + blogMenuHeight + reviewMenuHeight - 50) {
+        menuItems[indexOfMenUItemActive].classList.remove('menu-item__link--active');
+        menuItems[5].classList.add('menu-item__link--active');
+    } else if(scrollTop <=  contentMenuHeight + aboutMenuHeight + galleryMenuHeight  + bookTableMenuHeight + blogMenuHeight + reviewMenuHeight + contactMenuHeight - 40) {
+        menuItems[indexOfMenUItemActive].classList.remove('menu-item__link--active');
+        menuItems[6].classList.add('menu-item__link--active');
     }
 }
 
-function backSlide() {
-    listAuthor[currentIndex].classList.remove('slide-main-item--active');
-    listDot[currentIndex].classList.remove('slide-dot-item--active');
-    currentIndex--;
-    if (currentIndex < 0) {
-        currentIndex = listAuthor.length - 1;
+navBarMenu.onclick = () => {
+    listMenuItems.classList.toggle('list__menu--showWhenClickMenu');
+    lisInfoItems.classList.toggle('list__info--showWhenClickMenu');
+}
+
+controlFoodBtn.onclick = () => {
+    controlFoodBtn.classList.add('control-food__btn--active');
+    controlJuiceBtn.classList.remove('control-juices-btn--active');
+
+    for(let foodItem of foodItems) {
+        foodItem.classList.remove('event-food-item--hidden');
     }
-    listAuthor[currentIndex].classList.add('slide-main-item--active');
-    listDot[currentIndex].classList.add('slide-dot-item--active');
-
-}
-
-function nextSlide() {
-    listAuthor[currentIndex].classList.remove('slide-main-item--active');
-    listDot[currentIndex].classList.remove('slide-dot-item--active');
-    currentIndex++;
-    if (currentIndex > listAuthor.length - 1) {
-        currentIndex = 0;
+    for(let juiceItem of juiceItems) {
+        juiceItem.classList.add('event-juice-item--hidden');
     }
-    listAuthor[currentIndex].classList.add('slide-main-item--active');
-    listDot[currentIndex].classList.add('slide-dot-item--active');
 }
 
-function getCurrentIndex() {
-    Array.from(listDot).filter(function (dot, index) {
-        if (dot.classList.contains('slide-dot-item--active')) {
-            currentIndex = index;
-        };
-    })
+controlJuiceBtn.onclick = () => {
+    controlJuiceBtn.classList.add('control-juices-btn--active');
+    controlFoodBtn.classList.remove('control-food__btn--active');
+
+    for(let foodItem of foodItems) {
+        foodItem.classList.add('event-food-item--hidden');
+    }
+    for(let juiceItem of juiceItems) {
+        juiceItem.classList.remove('event-juice-item--hidden');
+    }
 }
 
-setInterval(function () {
-    getCurrentIndex();
-    nextSlide();
-}, 5000)
-
-
-const loading = document.querySelector('.loading')
-setTimeout(function () {
-    loading.classList.remove('active')
-}, 3000)
-
-function getInfoIndex() {
-    let i
-    Array.from(infoItems).forEach(function (infoItem, index) {
-        if(infoItem.classList.contains('active')) {
-            i = index
+function getmenuItemActive() {
+    for(let j = 0; j < menuItems.length; j++) {
+        if(menuItems[j].classList.contains('menu-item__link--active')) {
+            return j;
         }
-    })
-    return i
-}
-
-function handleClickInfo() {
-    for( let i = 0; i < infoItems.length; i++ ) {
-    let index = getInfoIndex();
-        infoItems[i].onclick = function () {
-            let index = getInfoIndex();
-            infoItems[index].classList.remove('active');
-            infoItems[i].classList.add('active');
-            contentItems[index].classList.remove('active');
-            contentItems[i].classList.add('active');
-        }
     }
 }
 
-handleClickInfo();
+// (function() {
+//     for(let i = 0; i < menuItems.length; i++) {
+//         menuItems[i].onclick = () => {
+//             let indexOfMenUItemActive = getmenuItemActive();
+//             menuItems[i].classList.add('menu-item__link--active');
+//             menuItems[indexOfMenUItemActive].classList.remove('menu-item__link--active');
+//         }
+//     }
+// })();
