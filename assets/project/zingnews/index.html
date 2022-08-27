@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zing News</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="grid wide">
+                <div class="header-inner">
+                    <div class="header-logo">
+                        <img src="./assets/imgs/logo-zing-home.svg" alt="Logo Zing News" class="header-logo-img">
+                        <span class="header-slogan">Tạp chí tri thức trực tuyến</span>
+                    </div>
+
+                    <div class="header-list">
+                        <ul class="header-list-news">
+                            <li class="header-news-item">
+                                Xuất bản
+                            </li>
+                            <li class="header-news-item">
+                                Kinh doanh
+                            </li>
+                            <li class="header-news-item">
+                                Công nghệ
+                            </li>
+                            <li class="header-news-item">
+                                Thể thao
+                            </li>
+                            <li class="header-news-item">
+                                Giải trí
+                            </li>
+                            <li class="header-news-item">
+                                Đời sống
+                            </li>
+                            <li class="header-news-item">
+                                Lifestyle
+                            </li>
+                        </ul>
+                        <button class="header-menu-btn">
+                            <i class="header-menu-btn-icon fa-solid fa-ellipsis"></i>
+                        </button>
+                    </div>
+
+                    <div class="header-actions">
+                        <button class="header-search-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <img src="./assets/imgs/user-avatar.jpeg" alt="User Avatar" class="header-user-avatar">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="content">
+            <div class="grid wide">
+                <div class="content-header">
+                    <div class="content-header-list">
+                        <span class="content-header-incre-icon">
+                            <i class="fa-solid fa-arrow-trend-up"></i>
+                        </span>
+                        <span class="content-header-item"># Khám xét Resort của ông Trump</span>
+                        <span class="content-header-item"># Dịch đậu mùa khỉ</span>
+                        <span class="content-header-item"># Cuộc chiến Tiktoker và hàng quán</span>
+                    </div>
+                    <div class="content-heaeder-weather">
+                        <h4 class="content-header-weather-city">Hồ Chí Minh</h4>
+                        <span class="content-header-tempo">30<sup>o</sup>C / 25-32<sup>o</sup>C</span>
+                        <img src="./assets/imgs/hazy.png" alt="Weather" class="content-header-weather-img">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col l-4 m-5 c-0">
+                        <ul class="content-news-list">
+                            <li class="content-news-item">
+                                <img src="./assets/imgs/news-item-1.webp" alt="News Item" class="content-news-img">
+                                <h4 class="content-news-title">Vài tiếng livestream trên TikTok, bán được 2 đơn hàng</h4>
+                            </li>
+                            <li class="content-news-item">
+                                <img src="./assets/imgs/news-item-2.webp" alt="News Item" class="content-news-img">
+                                <h4 class="content-news-title">Một kỷ nguyên của đảng Cộng hòa đã khép lại</h4>
+                            </li>
+                            <li class="content-news-item">
+                                <img src="./assets/imgs/news-item-3.webp" alt="News Item" class="content-news-img">
+                                <h4 class="content-news-title">Bị CSGT phạt nặng vì nồng độ cồn, tài xế nói 'không thể không nhậu'</h4>
+                            </li>
+                            <li class="content-news-item">
+                                <img src="./assets/imgs/news-item-4.webp" alt="News Item" class="content-news-img">
+                                <h4 class="content-news-title">Phim Hàn Quốc lấy bệnh ung thư làm trò đùa</h4>
+                            </li>
+                            <li class="content-news-item">
+                                <img src="./assets/imgs/news-item-5.webp" alt="News Item" class="content-news-img">
+                                <h4 class="content-news-title">Mendy khoe đã ngủ với 10.000 phụ nữ</h4>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col l-8 m-7 c-12">
+                        <div class="grid">
+                            <div class="row">
+                                <div class="col l-9 m-12 c-12">
+                                    <img src="./assets/imgs/casmero.webp" alt="Casemiro" class="content-news-football-img">
+                                    <h3 class="content-news-football-title">Casemiro chuẩn bị tới MU kiểm tra y tế</h3>
+                                    <p class="content-news-football-desc">Tiền vệ người Brazil tiến thêm một bước đến gần sân Old Trafford khi Real đồng ý để anh tới Manchester kiểm tra y tế.</p>
+                                    <div class="content-news-football-hot">
+                                        <i class="content-news-football-hot-dot-icon fa-solid fa-circle"></i>
+                                        <i class="content-news-football-hot-youtube-icon fa-brands fa-youtube"></i>
+                                        <h5 class="content-nenws-football-hot-title">Casemiro hay nhất trận Real loại Liverpool</h5>
+                                    </div>
+                                </div>
+
+                                <div class="col l-3 m-12 c-12">
+                                    <div class="grid">
+                                        <div class="content-news-right">
+                                            <div class="row">
+                                                <div class="col l-12 m-6 c-6">
+                                                    <img src="./assets/imgs/news-item-6.webp" alt="" class="content-news-right-img">
+                                                    <h4 class="content-news-right-title">Lý do ông Trump không trả lại các tài liệu của chính phủ</h4>
+                                                </div>
+                                                <div class="col l-12 m-6 c-6">
+                                                    <img src="./assets/imgs/news-item-7.webp" alt="" class="content-news-right-img">
+                                                    <h4 class="content-news-right-title">Ở Việt Nam không có bác sĩ tâm lý</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid">
+                <div class="content-multimedia">
+                    <div class="content-multimedia-header">
+                        <h4 class="content-multimedia-title">
+                            <span>/</span> MULTIMEDIA
+                        </h4>
+                        <span class="content-multimedia-item">
+                            VIDEO
+                        </span>
+                        <span class="content-multimedia-item">
+                            PODCAST
+                        </span>
+                        <span class="content-multimedia-item">
+                            LONGFORM
+                        </span>
+                        <span class="content-multimedia-item">
+                            STORY
+                        </span>
+                        <span class="content-multimedia-item">
+                            QUIZZ
+                        </span>
+                    </div>
+
+                    <div class="content-multimedia-news">
+                        <div class="grid">
+                            <div class="row">
+                                <div class="col l-6 m-12 c-12">
+                                    <img src="./assets/imgs/news-item-8.webp" alt="Hot News" class="content-multi-hotnews-img">
+                                    <h4 class="content-multi-hotnews-title">
+                                        <i class="img-icon fa-regular fa-image"></i>
+                                        MU muốn chốt sổ chuyển nhượng hè 2022 với 5 tân binh
+                                    </h4>
+                                    <span class="content-multi-hotnews-desc">
+                                        Theo Times, MU muốn mang về một hậu vệ phải, hai tiền vệ, một cầu thủ chạy cánh và một tiền đạo trước khi kỳ chuyển nhượng hè 2022 khép lại.
+                                    </span>
+                                </div>
+
+                                <div class="col l-6 m-12 c-12">
+                                    <div class="grid">
+                                        <div class="row">
+                                            <div class="col l-6 m-6 c-6">
+                                                <img src="./assets/imgs/news-item-9.webp" alt="Hot News" class="content-multi-hotnews-img">
+                                                <h4 class="content-multi-hotnews-title content-multi-hotnews-title-small">
+                                                    <i class="img-icon fa-regular fa-image"></i>
+                                                    Đồ thể thao không còn như trước
+                                                </h4>
+                                            </div>
+
+                                            <div class="col l-6 m-6 c-6">
+                                                <img src="./assets/imgs/news-item-10.webp" alt="Hot News" class="content-multi-hotnews-img">
+                                                <h4 class="content-multi-hotnews-title content-multi-hotnews-title-small">
+                                                    <i class="img-icon fa-regular fa-image"></i>
+                                                    Dinh thự hơn 140 năm tuổi được rao bán giá 25 triệu USD
+                                                </h4>
+                                            </div>
+                                        </div>
+                                        <div class="row custom-magrin">
+                                            <div class="col l-6 m-6 c-6">
+                                                <img src="./assets/imgs/news-item-11.webp" alt="Hot News" class="content-multi-hotnews-img">
+                                                <h4 class="content-multi-hotnews-title content-multi-hotnews-title-small">
+                                                    <i class="img-icon fa-regular fa-image"></i>
+                                                    Một ngày luyện tập của hotboy CSCĐ Quản Trọng Nghĩa
+                                                </h4>
+                                            </div>
+
+                                            <div class="col l-6 m-6 c-6">
+                                                <img src="./assets/imgs/news-item-12.webp" alt="Hot News" class="content-multi-hotnews-img">
+                                                <h4 class="content-multi-hotnews-title content-multi-hotnews-title-small">
+                                                    <i class="img-icon fa-regular fa-image"></i>
+                                                    Lái xe qua hầm Thủ Thiêm cần cẩn thận để tránh phạm luật
+                                                </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-books">
+                    <div class="grid wide">
+                        <h4 class="content-multimedia-title content-multimedia-title-books">
+                            <span>/</span> BOOKS
+                        </h4>
+                        <div class="content-books-list">
+                            <div class="col l-2-4 m-4 c-6">
+                                <div class="content-books-item">
+                                    <img src="./assets/imgs/books-item-1.webp" alt="Books" class="content-books-item-img">
+                                    <h5 class="content-books-item-title">
+                                        Một vụ tự tử vì cà phê
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6">
+                                <div class="content-books-item">
+                                    <img src="./assets/imgs/books-item-2.webp" alt="Books" class="content-books-item-img">
+                                    <h5 class="content-books-item-title">
+                                        Đồng hành cùng cha mẹ thời đại mới
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6">
+                                <div class="content-books-item">
+                                    <img src="./assets/imgs/books-item-3.webp" alt="Books" class="content-books-item-img">
+                                    <h5 class="content-books-item-title">
+                                        Tiết lộ về viên đá vô cực thứ 7
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6">
+                                <div class="content-books-item">
+                                    <img src="./assets/imgs/books-item-4.webp" alt="Books" class="content-books-item-img">
+                                    <h5 class="content-books-item-title">
+                                        Mặt trăng của tôi
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6">
+                                <div class="content-books-item">
+                                    <img src="./assets/imgs/books-item-5.webp" alt="Books" class="content-books-item-img">
+                                    <h5 class="content-books-item-title">
+                                        Nhiểu tủ sách điện tử phục vụ bạn đọc miễn phí
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6">
+                                <div class="content-books-item">
+                                    <img src="./assets/imgs/books-item-6.webp" alt="Books" class="content-books-item-img">
+                                    <h5 class="content-books-item-title">
+                                        Sài Gòn giành chính quyền trong cách mạng tháng 8
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6">
+                                <div class="content-books-item">
+                                    <img src="./assets/imgs/books-item-7.webp" alt="Books" class="content-books-item-img">
+                                    <h5 class="content-books-item-title">
+                                        Cho trẻ tâm hồn cao thượng
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6">
+                                <div class="content-books-item">
+                                    <img src="./assets/imgs/books-item-8.webp" alt="Books" class="content-books-item-img">
+                                    <h5 class="content-books-item-title">
+                                        Mua ebook thật khó hơn tìm ebook lậu
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-9">
+                        <div class="grid">
+                            <div class="row content-drama-item">
+                                <div class="col l-4 m-4 c-4">
+                                    <img src="./assets/imgs/news-item-13.webp" alt="Drama" class="content-news-drama">
+                                </div>
+                                <div class="col l-8 m-8 c-8">
+                                    <h4 class="content-news-drama-title">
+                                        Rooney: 'Chưa thấy cầu thủ 23 tuổi nào dám huých vai Messi'
+                                    </h4>
+                                    <p class="content-news-drama-desc">
+                                        Cựu đội trưởng Man United không đồng tình trước hành động của Mbappe với Messi trong trận PSG - Montpellier cách đây ít ngày.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row content-drama-item">
+                                <div class="col l-4 m-4 c-4">
+                                    <img src="./assets/imgs/news-item-14.webp" alt="Drama" class="content-news-drama">
+                                </div>
+                                <div class="col l-8 m-8 c-8">
+                                    <h4 class="content-news-drama-title">
+                                        Bà Phương Hằng khai lý do xướng tên nhiều nghệ sĩ trên mạng xã hội
+                                    </h4>
+                                    <p class="content-news-drama-desc">
+                                        Bà Nguyễn Phương Hằng khai những thông tin về đời tư của một số cá nhân được bà tham khảo trên mạng và nằm mơ.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row content-drama-item">
+                                <div class="col l-4 m-4 c-4">
+                                    <img src="./assets/imgs/news-item-15.jpeg" alt="Drama" class="content-news-drama">
+                                </div>
+                                <div class="col l-8 m-8 c-8">
+                                    <h4 class="content-news-drama-title">
+                                        Kiatisuk đưa thủ môn 22 tuổi bước ra ánh sáng
+                                    </h4>
+                                    <p class="content-news-drama-desc">
+                                        Rất ít người biết Dương Văn Lợi cho tới khi anh trở thành người hùng bất đắc dĩ trong chuỗi 6 trận bất bại của HAGL tại V.League 2022.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row content-drama-item">
+                                <div class="col l-4 m-4 c-4">
+                                    <img src="./assets/imgs/news-item-16.webp" alt="Drama" class="content-news-drama">
+                                </div>
+                                <div class="col l-8 m-8 c-8">
+                                    <h4 class="content-news-drama-title">
+                                        Lý do ông Trump không trả lại các tài liệu của chính phủ
+                                    </h4>
+                                    <p class="content-news-drama-desc">
+                                        Cựu Tổng thống Donald Trump bị cáo buộc mang trái phép hàng loạt tài liệu của chính phủ ra khỏi Nhà Trắng khi hết nhiệm kỳ vào năm 2021. Câu hỏi đặt ra là tại sao ông làm như vậy?
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row content-drama-item">
+                                <div class="col l-4 m-4 c-4">
+                                    <img src="./assets/imgs/news-item-17.webp" alt="Drama" class="content-news-drama">
+                                </div>
+                                <div class="col l-8 m-8 c-8">
+                                    <h4 class="content-news-drama-title">
+                                        Brooklyn Beckham nịnh vợ bằng 70 hình xăm
+                                    </h4>
+                                    <p class="content-news-drama-desc">
+                                        Brooklyn tiết lộ có tổng cộng 100 hình xăm trên cơ thể. Trong số đó có 70 hình xăm anh lấy cảm hứng từ người bạn đời - Nicola Peltz.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row content-drama-item">
+                                <div class="col l-4 m-4 c-4">
+                                    <img src="./assets/imgs/news-item-18.webp" alt="Drama" class="content-news-drama">
+                                </div>
+                                <div class="col l-8 m-8 c-8">
+                                    <h4 class="content-news-drama-title">
+                                        CZ nói về tin bị FBI bắt, thu giữ BNB
+                                    </h4>
+                                    <p class="content-news-drama-desc">
+                                        Một trang tin lớn của Trung Quốc đưa tin Changpeng Zhao bị FBI bắt. CEO Binance phải lên mạng xã hội thanh minh rằng đây là tin giả.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col l-3">
+                        <div class="grid">
+                            <div class="row">
+                                <div class="col l-12 content-hot-read">
+                                    <div class="content-hot-reads">
+                                        <h4 class="content-hot-read-title">Đọc nhiều</h4>
+                                        <div class="content-hot-read-item">
+                                            <img src="./assets/imgs/hot-read-1.webp" alt="Hot Read" class="content-hot-read-img">
+                                            <div class="content-hot-read-info">
+                                                <p class="content-hot-read-name">XUẤT BẢN</p>
+                                                <h5 class="content-hot-read-desc">
+                                                    Lao động cưỡng bức, cà phê nhuốm máu
+                                                </h5>
+                                            </div>
+                                        </div>
+                                        <div class="content-hot-read-item">
+                                            <img src="./assets/imgs/hot-read-2.webp" alt="Hot Read" class="content-hot-read-img">
+                                            <div class="content-hot-read-info">
+                                                <p class="content-hot-read-name">THỂ THAO</p>
+                                                <h5 class="content-hot-read-desc">
+                                                    Rooney: 'Chưa thấy cầu thủ 23 tuổi nào dám huých vai Messi'
+                                                </h5>
+                                            </div>
+                                        </div>
+                                        <div class="content-hot-read-item">
+                                            <img src="./assets/imgs/hot-read-3.webp" alt="Hot Read" class="content-hot-read-img">
+                                            <div class="content-hot-read-info">
+                                                <p class="content-hot-read-name">THỜI TRANG</p>
+                                                <h5 class="content-hot-read-desc">
+                                                    Đồ thể thao không còn như trước
+                                                </h5>
+                                            </div>
+                                        </div>
+                                        <div class="content-hot-read-item">
+                                            <img src="./assets/imgs/hot-read-4.webp" alt="Hot Read" class="content-hot-read-img">
+                                            <div class="content-hot-read-info">
+                                                <p class="content-hot-read-name">KINH DOANH</p>
+                                                <h5 class="content-hot-read-desc">
+                                                    Dinh thự hơn 140 năm tuổi được rao bán giá 25 triệu USD
+                                                </h5>
+                                            </div>
+                                        </div>
+                                        <div class="content-hot-read-item">
+                                            <img src="./assets/imgs/hot-read-5.webp" alt="Hot Read" class="content-hot-read-img">
+                                            <div class="content-hot-read-info">
+                                                <p class="content-hot-read-name">ĐỜI SỐNG</p>
+                                                <h5 class="content-hot-read-desc">
+                                                    Vài tiếng livestream trên TikTok, bán được 2 đơn hàng
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col l-12 podcast">
+                                    <div class="podcast-background">
+                                        <div class="podcast-bg-header">
+                                            <div class="podcast-heading">
+                                                <img src="./assets/imgs/logo_podcast_white.png" alt="PODCAST logo" class="podcast-logo">
+                                                <img src="./assets/imgs/podcast.webp" alt="PODCAST IMG" class="podcast-img">
+                                            </div>
+                                            <h4 class="podcast-title">Nếu không thể dung hòa với tập thể, tài năng Mbappe có ích gì</h4>
+                                        </div>
+                                        <div class="podcast-list">
+                                            <div class="podcast-item">
+                                                <img src="./assets/imgs/podcast-item-1.webp" alt="Podcast Item Img" class="podcast-item-img">
+                                                <h5 class="podcast-item-title">Thức dậy từ 5h sáng để trị liệu tâm lý online</h5>
+                                            </div>
+                                            <div class="podcast-item">
+                                                <img src="./assets/imgs/podcast-item-2.webp" alt="Podcast Item Img" class="podcast-item-img">
+                                                <h5 class="podcast-item-title">TikTok có lỗ hổng về quyền riêng tư của người dùng</h5>
+                                            </div>
+                                            <div class="podcast-item">
+                                                <img src="./assets/imgs/podcast-item-3.webp" alt="Podcast Item Img" class="podcast-item-img">
+                                                <h5 class="podcast-item-title">Phương Nhi: 'Tôi vẫn chưa biết đi giày cao gót'</h5>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-lifestyle">
+                    <span>/</span>
+                    <h4 class="content-lifestyle-heading">LIFESTYLE</h4>
+                </div>
+
+                <div class="row">
+                    <div class="col l-6 m-8 c-12">
+                        <div class="content-lifestyle-left">
+                            <img src="./assets/imgs/life-img-1.webp" alt="LifeStyle" class="content-lifestyle-left-img">
+                            <h4 class="content-lifestyle-title">Đi bar, kể chuyện về Paris cùng Amandine</h4>
+                            <p class="content-lifestyle-desc">
+                                Từ khi chuyển về Việt Nam, Amandine thích uống cà phê sữa đá và đi bar vào tối cuối tuần. Cô gái người Pháp gốc Việt mơ ước một lần được thử skydiving và đi phượt cùng người yêu.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col l-6 m-4 c-12">
+                        <div class="row">
+                            <div class="col l-6 m-12 c-12 life-separate">
+                                <div class="content-lifestyle-news">
+                                    <img src="./assets/imgs/life-2.webp" alt="Life News" class="content-life-news-img">
+                                    <h4 class="content-life-news-title">3 mẫu túi hiệu đáng để đầu tư</h4>
+                                </div>
+
+                                <div class="content-lifestyle-news">
+                                    <img src="./assets/imgs/life-3.webp" alt="Life News" class="content-life-news-img">
+                                    <h4 class="content-life-news-title">3 quán sữa đậu, tào phớ kiểu mới tại Hà Nội</h4>
+                                </div>
+                            </div>
+
+                            <div class="col l-6 m-0 c-0">
+                                <div class="content-life-style-item">
+                                    <h5 class="content-life-style-title">
+                                        7 món đồ phòng khách không nên mua rẻ tiền
+                                    </h5>
+                                    <img src="./assets/imgs/life-4.webp" alt="Life News" class="content-life-style-img">
+                                </div>
+                                <div class="content-life-style-item">
+                                    <h5 class="content-life-style-title">
+                                        Tôi nhận được tin nhắn từ HR chỉ 20 phút sau khi ứng tuyển
+                                    </h5>
+                                    <img src="./assets/imgs/life-5.webp" alt="Life News" class="content-life-style-img">
+                                </div>
+                                <div class="content-life-style-item">
+                                    <h5 class="content-life-style-title">
+                                        Học được gì sau một cuộc tình tan vỡ
+                                    </h5>
+                                    <img src="./assets/imgs/life-6.webp" alt="Life News" class="content-life-style-img">
+                                </div>
+                                <div class="content-life-style-item">
+                                    <h5 class="content-life-style-title">
+                                        Học được gì sau một cuộc tình tan vỡ
+                                    </h5>
+                                    <img src="./assets/imgs/life-7.webp" alt="Life News" class="content-life-style-img">
+                                </div>
+                                <div class="content-life-style-item">
+                                    <h5 class="content-life-style-title">
+                                        3 resort trú mưa ở Nha Trang
+                                    </h5>
+                                    <img src="./assets/imgs/life-8.webp" alt="Life News" class="content-life-style-img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lifestyle-separate"></div>
+
+                <div class="row">
+                    <div class="col l-3 m-6 c-12">
+                        <div class="thumb-title">
+                            <span>/</span>
+                            <h4>XUẤT BẢN</h4>
+                        </div>
+                        <img src="./assets/imgs/Thumb-1.webp" alt="Thumb" class="content-thumb-img">
+                        <h4 class="content-thumb-title">Cuộc đời, sự nghiệp Đại tướng Võ Nguyên Giáp qua ảnh</h4>
+                        <div class="content-thumb-item">
+                            <img src="./assets/imgs/thumb-2.webp" alt="Thumb" class="content-thumb-item-img">
+                            <h5 class="content-thumb-item-title">Cuộc thi giới thiệu sách về Chủ tịch Hồ Chí Minh</h5>
+                        </div>
+                        <div class="content-thumb-item">
+                            <img src="./assets/imgs/thumb-3.webp" alt="Thumb" class="content-thumb-item-img">
+                            <h5 class="content-thumb-item-title">Elon Musk tiết lộ 9 cuốn sách có thể thay đổi cuộc đời</h5>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <div class="thumb-title">
+                            <span>/</span>
+                            <h4>SÁCH HAY</h4>
+                        </div>
+                        <img src="./assets/imgs/thumb-4.webp" alt="Thumb" class="content-thumb-img">
+                        <h4 class="content-thumb-title">Vị tồng thống tự tử vì cà phê</h4>
+                        <div class="content-thumb-item">
+                            <img src="./assets/imgs/thumb-5.webp" alt="Thumb" class="content-thumb-item-img">
+                            <h5 class="content-thumb-item-title">Uống cà phê nhiều tác động thế nào tới sức khỏe</h5>
+                        </div>
+                        <div class="content-thumb-item">
+                            <img src="./assets/imgs/thumb-6.webp" alt="Thumb" class="content-thumb-item-img">
+                            <h5 class="content-thumb-item-title">Câu chuyện về người thầy hà khắc và việc hoàn thiện con người</h5>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <div class="thumb-title">
+                            <span>/</span>
+                            <h4>TÁC GIẢ</h4>
+                        </div>
+                        <img src="./assets/imgs/Thumb-7.webp" alt="Thumb" class="content-thumb-img">
+                        <h4 class="content-thumb-title">Đọc sách lậu là tiêu thụ đồ ăn cắp</h4>
+                        <div class="content-thumb-item">
+                            <img src="./assets/imgs/thumb-8.webp" alt="Thumb" class="content-thumb-item-img">
+                            <h5 class="content-thumb-item-title">Làn sóng Hàn Quốc giúp 'Pachinko' thêm thành công</h5>
+                        </div>
+                        <div class="content-thumb-item">
+                            <img src="./assets/imgs/thumb-9.webp" alt="Thumb" class="content-thumb-item-img">
+                            <h5 class="content-thumb-item-title">Tôi từng dịch cho web truyện tranh lậu giá 5.000 đồng một chương</h5>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <div class="thumb-title">
+                            <span>/</span>
+                            <h4>XÃ HỘI</h4>
+                        </div>
+                        <img src="./assets/imgs/thumb-11.webp" alt="Thumb" class="content-thumb-img">
+                        <h4 class="content-thumb-title">TP.HCM kỷ luật 17 Đảng viên</h4>
+                        <div class="content-thumb-item">
+                            <img src="./assets/imgs/thumb-10.webp" alt="Thumb" class="content-thumb-item-img">
+                            <h5 class="content-thumb-item-title">Tai nạn giao thông gây kẹt xe liên tỉnh miền Tây</h5>
+                        </div>
+                        <div class="content-thumb-item">
+                            <img src="./assets/imgs/thumb-12.webp" alt="Thumb" class="content-thumb-item-img">
+                            <h5 class="content-thumb-item-title">Xe tải biến dạng sau tai nạn liên hoàn trên quốc lộ 1</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+                <div class="grid wide">
+                    <div class="row footer-wide">
+                        <div class="col l-8 m-8 c-12">
+                            <img src="./assets/imgs/logo-zing-home.svg" alt="Logo" class="footer-logo-img">
+                            <h5 class="footer-desc">
+                                Tạp chí điện tử Tri thức trực tuyến
+                            </h5>
+                            <h5 class="footer-desc">
+                                Cơ quan chủ quản: Hội Xuất bản Việt Nam
+                            </h5>
+                            <h5 class="footer-desc">
+                                Giấy phép báo chí: số 75/GP-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 26/02/2020
+                            </h5>
+                            <h5 class="footer-desc">
+                                Phó tổng biên tập phụ trách: Lâm Quang Hiếu
+                            </h5>
+                            <h5 class="footer-desc">
+                                © Toàn bộ bản quyền thuộc Tri thức trực tuyến
+                            </h5>
+                        </div>
+
+                        <div class="col l-4 m-4 c-12 footer-right">
+                            <h5 class="footer-desc">
+                                Tòa soạn: Tầng 7, D29 Phạm Văn Bạch, Quận Cầu Giấy, Hà Nội
+                            </h5>
+                            <h5 class="footer-desc">
+                                Hotline: 0931.222.666 - Email: toasoan@zing.vn
+                            </h5>
+                            <div class="footer-contact">
+                                <span class="footer-contact-item">Liên hệ</span>
+                                <span class="footer-contact-item">Quảng cáo</span>
+                                <span class="footer-contact-item">Tuyển dụng</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </footer>
+    </div>
+</body>
+</html>

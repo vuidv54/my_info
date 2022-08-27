@@ -1,0 +1,99 @@
+/* Tablet & Mobile */
+@media (max-width: 1024px) {
+    .header-list-news {
+        display: none;
+    }
+    .content-header {
+        display: none;
+    }
+    .header-menu-btn {
+        display: none;
+    }
+    .content-hot-reads {
+        display: none;
+    }
+    .podcast-background {
+        display: none;
+    }
+    .content-multi-hotnews-desc {
+        margin-bottom: 20px;
+        display: inline-block;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .header-inner {
+        margin-top: 3px;
+    }
+    .content-news-title {
+        text-align: left;
+    }
+    .content-news-football-title {
+        font-size: 2.7rem;
+    }
+    .content-multimedia {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .header-inner {
+        justify-content: center;
+    }
+    .header-actions {
+        display: none;
+    }
+    .header-list {
+        display: none;
+    }
+    .content-news-football-title {
+        font-size: 1.8rem;
+    }
+    .content-multimedia-item {
+        display: none;
+    }
+    .content-news-football-img {
+        height: 250px;
+        object-fit: cover;
+    }
+    .c-12 {
+        padding:  0 12px;
+    }
+    .content-multimedia-title {
+        padding: 0 12px;
+    }
+    .content-news-drama-desc {
+        display: none;
+    }
+    .content-drama-item {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .content-news-drama-title {
+        font-size: 1.6rem;
+    }
+    .content-lifestyle {
+        margin-left: 12px;
+        margin-bottom: 12px;
+    }
+    .content-lifestyle-left {
+        padding: 0 12px;
+    }
+    .content-lifestyle-title {
+        margin-top: 0;
+        font-size: 1.7rem;
+    }
+    .content-lifestyle-desc {
+        display: inline-block;
+        margin-bottom: 16px;
+    }
+    .lifestyle-separate {
+        display: none;
+    }
+    .thumb-title {
+        margin-top: 25px;
+    }
+}
