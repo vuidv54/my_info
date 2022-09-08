@@ -29,7 +29,7 @@ document.onscroll = (e) => {
     navBarLogo.style.width = newLogoWidth > 0 ? newLogoWidth + 'px' : 0;
     navBarLogo.style.opacity = newLogoWidth / logoWidth;
 
-    if(newLogoWidth <= 20) {
+    if (newLogoWidth <= 20) {
         navBarLogoTitle.classList.add('logo__title--active');
         navBar.classList.add('navbar--active');
     } else {
@@ -47,62 +47,102 @@ document.onscroll = (e) => {
 
     let indexOfMenUItemActive = getmenuItemActive();
 
-    if(scrollTop <=  contentMenuHeight - 50) {
+    if (scrollTop <= contentMenuHeight - 40) {
         menuItems[indexOfMenUItemActive].classList.remove('menu-item__link--active');
         menuItems[0].classList.add('menu-item__link--active');
-    } else if(scrollTop <=  contentMenuHeight + aboutMenuHeight - 50) {
+    } else if (scrollTop <= contentMenuHeight + aboutMenuHeight - 40) {
         menuItems[indexOfMenUItemActive].classList.remove('menu-item__link--active');
         menuItems[1].classList.add('menu-item__link--active');
-    } else if(scrollTop <=  contentMenuHeight + aboutMenuHeight + galleryMenuHeight - 50) {
+    } else if (scrollTop <= contentMenuHeight + aboutMenuHeight + galleryMenuHeight - 40) {
         menuItems[indexOfMenUItemActive].classList.remove('menu-item__link--active');
         menuItems[2].classList.add('menu-item__link--active');
-    } else if(scrollTop <=  contentMenuHeight + aboutMenuHeight + galleryMenuHeight  + bookTableMenuHeight - 50) {
+    } else if (
+        scrollTop <=
+        contentMenuHeight + aboutMenuHeight + galleryMenuHeight + bookTableMenuHeight - 40
+    ) {
         menuItems[indexOfMenUItemActive].classList.remove('menu-item__link--active');
         menuItems[3].classList.add('menu-item__link--active');
-    } else if(scrollTop <=  contentMenuHeight + aboutMenuHeight + galleryMenuHeight  + bookTableMenuHeight + blogMenuHeight - 50) {
+    } else if (
+        scrollTop <=
+        contentMenuHeight +
+            aboutMenuHeight +
+            galleryMenuHeight +
+            bookTableMenuHeight +
+            blogMenuHeight -
+            40
+    ) {
         menuItems[indexOfMenUItemActive].classList.remove('menu-item__link--active');
         menuItems[4].classList.add('menu-item__link--active');
-    } else if(scrollTop <=  contentMenuHeight + aboutMenuHeight + galleryMenuHeight  + bookTableMenuHeight + blogMenuHeight + reviewMenuHeight - 50) {
+    } else if (
+        scrollTop <=
+        contentMenuHeight +
+            aboutMenuHeight +
+            galleryMenuHeight +
+            bookTableMenuHeight +
+            blogMenuHeight +
+            reviewMenuHeight -
+            200
+    ) {
         menuItems[indexOfMenUItemActive].classList.remove('menu-item__link--active');
         menuItems[5].classList.add('menu-item__link--active');
-    } else if(scrollTop <=  contentMenuHeight + aboutMenuHeight + galleryMenuHeight  + bookTableMenuHeight + blogMenuHeight + reviewMenuHeight + contactMenuHeight - 40) {
+    } else if (
+        scrollTop <=
+        contentMenuHeight +
+            aboutMenuHeight +
+            galleryMenuHeight +
+            bookTableMenuHeight +
+            blogMenuHeight +
+            reviewMenuHeight +
+            contactMenuHeight
+    ) {
         menuItems[indexOfMenUItemActive].classList.remove('menu-item__link--active');
         menuItems[6].classList.add('menu-item__link--active');
     }
-}
+    console.log(
+        'height: ',
+        contentMenuHeight +
+            aboutMenuHeight +
+            galleryMenuHeight +
+            bookTableMenuHeight +
+            blogMenuHeight +
+            reviewMenuHeight -
+            300
+    );
+    console.log(scrollTop);
+};
 
 navBarMenu.onclick = () => {
     listMenuItems.classList.toggle('list__menu--showWhenClickMenu');
     lisInfoItems.classList.toggle('list__info--showWhenClickMenu');
-}
+};
 
 controlFoodBtn.onclick = () => {
     controlFoodBtn.classList.add('control-food__btn--active');
     controlJuiceBtn.classList.remove('control-juices-btn--active');
 
-    for(let foodItem of foodItems) {
+    for (let foodItem of foodItems) {
         foodItem.classList.remove('event-food-item--hidden');
     }
-    for(let juiceItem of juiceItems) {
+    for (let juiceItem of juiceItems) {
         juiceItem.classList.add('event-juice-item--hidden');
     }
-}
+};
 
 controlJuiceBtn.onclick = () => {
     controlJuiceBtn.classList.add('control-juices-btn--active');
     controlFoodBtn.classList.remove('control-food__btn--active');
 
-    for(let foodItem of foodItems) {
+    for (let foodItem of foodItems) {
         foodItem.classList.add('event-food-item--hidden');
     }
-    for(let juiceItem of juiceItems) {
+    for (let juiceItem of juiceItems) {
         juiceItem.classList.remove('event-juice-item--hidden');
     }
-}
+};
 
 function getmenuItemActive() {
-    for(let j = 0; j < menuItems.length; j++) {
-        if(menuItems[j].classList.contains('menu-item__link--active')) {
+    for (let j = 0; j < menuItems.length; j++) {
+        if (menuItems[j].classList.contains('menu-item__link--active')) {
             return j;
         }
     }
